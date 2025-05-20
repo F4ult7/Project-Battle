@@ -15,7 +15,7 @@ window.onload = function () {
     },
     {
       name: "Poseidon",
-      health: 110,
+      health: 110,g
       attack: 18,
       special: "Tidal Wave"
     },
