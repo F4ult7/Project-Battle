@@ -1,4 +1,4 @@
-// player.js
+
 class Player {
   constructor(name, health, attack, special) {
     this.name = name;
@@ -10,7 +10,7 @@ class Player {
   attack(target) {
     const damage = this.attack; 
     target.health = Math.max(0, target.health - damage);
-    return `${this.name} hits ${target.name} for ${damage}!`;
+    return `${this.name} hits ${target.name} for ${damage}!`;  // i need to change this to be functional on attack too.
   }
 
   specialAttack(target) {
