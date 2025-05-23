@@ -1,27 +1,27 @@
-
 class Player {
-  constructor(name, health, attack, special) {
+  constructor(name, health, attackPower, special, maxHealth) {
     this.name = name;
     this.health = health;
-    this.attack = attack;
+    this.maxHealth = maxHealth || health; //health bar fixed this needed
+    this.attackPower = attackPower;
     this.special = special;
   }
 
-  attack(target) {
-    const damage = this.attack; 
+  normalAttack(target) {
+    const damage = this.attackPower;
     target.health = Math.max(0, target.health - damage);
-    return `${this.name} hits ${target.name} for ${damage}!`;  // i need to change this to be functional on attack too.
+    return `${this.name} hits ${target.name} for ${damage}!`;
   }
 
   specialAttack(target) {
-    const damage = this.attack + 10; // Special does attack + 10
+    const damage = this.attackPower + 10;
     target.health = Math.max(0, target.health - damage);
     return `${this.name} uses ${this.special} for ${damage}!`;
   }
 
   heal() {
-    const amount = 10 + Math.floor(Math.random() * 10); // Heal 10-20 HP
-    this.health = Math.min(100, this.health + amount); // stop at 100
-    return `${this.name} heals ${amount} HP.`;
+    const healAmount = Math.floor(Math.random() * 15) + 10;
+    this.health = Math.min(this.health + healAmount, this.maxHealth);
+    return `${this.name} heals for ${healAmount} HP.`;
   }
 }

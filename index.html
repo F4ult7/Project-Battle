@@ -2,67 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gods Of Olympus</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gods Of Olympus</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <h1> ⚡ Gods of olympus ⚡</h1>
+  <header>
+    <h1>⚡ Gods of Olympus ⚡</h1>
+  </header>
 
-    <!-- game intro & choice of god -->
+  <!-- Start Screen -->
+  <section id="start-screen">
+    <h2>Welcome to Gods of Olympus</h2>
+    <button id="start-btn">Play</button>
+    <p><em>Description for the game coming soon</em></p>
+  </section>
 
-    <div id="game-intro">
-        <div id="god-selection">
+  <!-- God Selection Screen -->
+  <section id="game-intro">
+    <div id="god-selection">
+      <h2>Choose Your God</h2>
+      <div id="gods-container"></div>
+    </div>
+  </section>
 
-            <h2>Choose Your God</h2>
-            <button id="start-game">Play</button>
-            <div id="gods-container"> </div> <!-- gods inserted dv -->
-        </div>
+  <!-- Arena Battle Screen -->
+  <section id="arena">
+    <div id="battle-log"></div>
 
-        <!-- Battle Screen  -->
-        <div id="battle-screen">
-            <div id="battle=log"></div>
+    <!-- Player and Enemy UI -->
+    <div id="player-god" class="fighter">
+      <h3 id="player-bar"></h3>
+      <div class="health-bar">
+        <div id="player-health" class="health-fill"></div>
+      </div>
+    </div>
 
-            <!-- Player Information -->
-            <div id="player-info" class="character-info">
-                <h3 id="player-bar"></h3>
+    <div id="enemy-god" class="fighter">
+      <h3 id="enemy-name"></h3>
+      <div class="health-bar">
+        <div id="enemy-health" class="health-fill"></div>
+      </div>
+    </div>
+    
+<!-- Action buttons -->
+    <div id="actions">
+      <button id="attack-btn">Attack</button>
+      <button id="special-btn">Special</button>
+      <button id="heal-btn">Heal</button>
+    </div>
+  </section>
 
-                <div class="health-bar">
-
-                    <div id="player-health" class="health-fill"></div>
-                </div>
-            </div>
-
-            <!-- Enemy Information -->
-            <div id="enemy-info" class="character-info">
-                <h3 id="enemy-name"></h3>
-
-                <div class="health-bar">
-
-                    <div id="enemy-health" class="health-fill"></div>
-                </div>
-            </div>
-
-            <!-- Buttons for attack & special -->
-
-            <div id="actions">
-                <button id="attack-btn">Attack</button>
-                <button id="special-btn">Special</button>
-                <!-- <button id="heal-btn">Heal</button>  Optional -->
-            </div>
-        </div>
-
-        <div id="end-screen">
-            <h2 id="end-message"></h2>
-            <button>Play Again</button>
-        </div>
-
-        <script type="text/javascript" src="/js/player.js"></script>
-        <script type="text/javascript" src="/js/game.js"></script>
-        <script type="text/javascript" src="/js/script.gods.js"></script>
-
+  <!-- End Screen -->
+  <section id="end-screen">
+    <h2 id="end-message"></h2>
+    <button id="restart-btn">Play Again</button>
+  </section>
+ 
+  <script type="text/javascript" src="./js/player.js"></script>
+  <script type="text/javascript" src="./js/game.js"></script>
+  <script type="text/javascript" src="./js/script.gods.js"></script>
 </body>
 
 </html>

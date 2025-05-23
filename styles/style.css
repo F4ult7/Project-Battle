@@ -1,55 +1,137 @@
- h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 5px black;
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Cinzel", serif;
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-h2 {
-  font-size: 1.5rem;
-  color: #e1420d;
-  margin-top: 20px;
+h1 {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-/* buttons section */
-
- #controls {
-  margin-bottom: 20px;
+#start-screen {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/theme.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-button {
-  margin: 10px;
-  padding: 12px 25px;
-  background: linear-gradient(to right, #1b1804, #efc26a);
-  color: #222;
-  font-weight: bold;
-  font-size: 1rem;
-   border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-} 
- button:disabled {
-  background: #555;
-  color: #999;
-  cursor: not-allowed;
-} 
-
-
-button:hover { 
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #fffefc;
-}
-
-#battle-screen {
+/* here i edit the first screen where the play , description will exist*/
+#game-intro {
   display: none;
+  background-image: url("../images/godCardTheme.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+#gods-container {
+ padding:15%;
+  border-radius: 40px; 
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+/* here i edit the second where you choose god cards. */
+
+#god-selection {
+  padding: 2rem;
+}
+
+.god-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid gold;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+
+.god-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5.5rem;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background: gold;
+  color: black;
+  border-radius: 5px;
+}
+
+#arena {
+  position: relative;
+  display: none;
+  height: 60vh;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.fighter {
+  position: absolute;
+  bottom: -30vh;
+  width: 350px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#player-god {
+  left: 10%;
+}
+
+#enemy-god {
+  right:10%;
+}
+
+.health-bar {
+  width: 200px;
+  height: 20px;
+  background: #222;
+  border: 2px solid #000;
+  margin: 10px auto;
+}
+
+.health-fill {
+  height: 100%;
+  background: linear-gradient(to right, limegreen, green);
+  border-radius: 3px;
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+#actions {
+  margin-top: 1rem;
+}
+
+#battle-log {
+  max-height: 150px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 90%;
+  border: 1px solid white;
+  text-align: left;
+ 
 }
 
 #end-screen {
-  text-align: center;
-  font-size: 2rem;
-  padding: 20px;
-  background-color: #111;
-  color: white;
-  transition: opacity 0.5s; 
-}  
-
-
+  display: none;
+  padding: 3rem;
+}
