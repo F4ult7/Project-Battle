@@ -104,7 +104,7 @@ https://www.youtube.com/watch?v=xfCPZhMw5Z0
 ~ Form what you want to achieve in your head pass it on a paper/note and then start coding.
 ~ Do not touch the code when you feel tired it will break.
 ~ Do not rush the code take your time or ..it will break. 
-~ Do not code if your head is $#@^@!#$% it will break. 
+~ Do not code if your head is going crazy it will break. 
 ~ ALWAYS and i mean ALWAYS keep a backup file with your working project in case you break it.
 ~ it will break thats for sure , atleast for now,when you feel like ready to punch the walls take a step back go to sleep and reset . (dont do that if you are working😂) 
 ~ Achievement unlocked "it will break" (35 times)
