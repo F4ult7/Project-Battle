@@ -47,7 +47,6 @@ const gods = [
   }
 ];
 
-// When the window loads, display god cards
  function cards () {
   gods.forEach((god) => {
     // Create card for each god

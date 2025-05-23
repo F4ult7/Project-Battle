@@ -3,7 +3,8 @@
 <!-- script.gods array of obj etc  -->
 <!-- Player JS for the behavior of the player attack / heal /  -->
 <!-- game for the behavior of the page refresh / restart / screens-->
-
+<!-- OPTIONAL COOLDOWNS -->
+<!-- OPTIONAL More function to make the game more challenging and attractive  -->
 
 
 *********** HTML STRUCTURE ***********
@@ -73,7 +74,7 @@
 
 7. Improving Structure
 
-- Refactor html (23-05-25)
+- Refine html (23-05-25)
 - keep file separation (script.js for UI setup, game.js for game logic). (23-05-25)
 
 
