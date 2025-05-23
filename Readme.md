@@ -1,36 +1,36 @@
 *********** To do list *********
 
-<!-- script.gods array of obj etc  -->
-<!-- Player JS for the behavior of the player attack / heal /  -->
-<!-- game for the behavior of the page refresh / restart / screens-->
-<!-- OPTIONAL COOLDOWNS -->
-<!-- OPTIONAL More function to make the game more challenging and attractive  -->
+- script.gods array of obj etc 
+- Player JS for the behavior of the player attack / heal / 
+- game for the behavior of the page refresh / restart / screens
+- OPTIONAL COOLDOWNS
+- OPTIONAL More function to make the game more challenging and attractive 
 
 
 *********** HTML STRUCTURE ***********
 
-<!-- Intro & god choice containers-->
-<!-- Battle screen  -->
-<!-- Player Information -->
-<!-- Enemy Information -->
-<!-- buttons -->
- <!-- Refactor -->
- <!-- polishing -->
+- Intro & god choice containers
+- Battle screen 
+- Player Information
+- Enemy Information
+- buttons
+- Refactor
+- polishing
 
 *********** JS FUNCTIONS ***********
 
 
-<!-- Add Heal function -->
-<!-- Add cooldown for special abilites -->
-<!-- Add Healhbar UI instead of just numbers **(quiz lab can be the same ,check)** -->
- <!-- Refactor -->
- <!-- polishing -->
+- Add Heal function
+- Add cooldown for special abilites
+- Add Healhbar UI instead of just numbers **(quiz lab can be the same ,check)**
+- Refactor
+- polishing
 
 
 ***********   CSS STYLING   ***********
-<!-- image and animations for attacks -->
-<!-- Themes for gods  -->
-<!-- backgrounds -->
+- image and animations for attacks
+- Themes for gods 
+- backgrounds
 
 
 **************************************What i did so far************************************** 
