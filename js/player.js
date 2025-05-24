@@ -8,13 +8,17 @@ class Player {
   }
 
   normalAttack(target) {
-    const damage = this.attackPower;
+    const min = this.attackPower - 5;
+    const max = this.attackPower + 5;
+    const damage = Math.floor(Math.random() * (max - min + 1)) + min; //random attack added
     target.health = Math.max(0, target.health - damage);
     return `${this.name} hits ${target.name} for ${damage}!`;
   }
 
   specialAttack(target) {
-    const damage = this.attackPower + 10;
+    const min = this.attackPower + 5;
+    const max = this.attackPower + 15;
+    const damage = Math.floor(Math.random() * (max - min + 1)) + min; //random attack added
     target.health = Math.max(0, target.health - damage);
     return `${this.name} uses ${this.special} for ${damage}!`;
   }

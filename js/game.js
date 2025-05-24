@@ -25,8 +25,13 @@ class Game {
     this.enemyGodDiv = document.querySelector("#enemy-god");
 
     // Set sprite
-    this.playerGodDiv.style.backgroundImage = `url('${playerData.image}')`; //sprite works
-    this.enemyGodDiv.style.backgroundImage = `url('${enemyData.image}')`; //sprite works 
+    document.querySelector("#player-sprite").style.backgroundImage = `url('${playerData.image}')`; //sprite works
+    document.querySelector("#enemy-sprite").style.backgroundImage = `url('${enemyData.image}')`; //sprite works 
+
+    //set names on UI for the gods 
+
+document.querySelector("#player-name").textContent = this.player.name
+    document.querySelector("#enemy-name").textContent = this.enemy.name
 
     // set background for each god
    // hide selection screen and remove its background overlp
@@ -58,7 +63,9 @@ document.body.style.backgroundImage = `url('${playerData.background}')`;
     const p = document.createElement("p");
     p.textContent = message;
     this.battleLog.appendChild(p); 
+    this.battleLog.scrollTop = this.battleLog.scrollHeight; // fixed to show on the bottom 
   } 
+
 
   endGame(result) {
     if (result === "win") {

@@ -35,10 +35,11 @@
 
     <!-- Player and Enemy UI -->
     <div id="player-god" class="fighter">
-      <h3 id="player-bar"></h3>
+      <h3 id="player-name"></h3>
       <div class="health-bar">
         <div id="player-health" class="health-fill"></div>
       </div>
+      <div id="player-sprite" class="sprite" ></div>
     </div>
 
     <div id="enemy-god" class="fighter">
@@ -46,6 +47,7 @@
       <div class="health-bar">
         <div id="enemy-health" class="health-fill"></div>
       </div>
+      <div id="enemy-sprite" class="sprite" ></div>
     </div>
     
 <!-- Action buttons -->
@@ -60,6 +62,8 @@
   <section id="end-screen">
     <h2 id="end-message"></h2>
     <button id="restart-btn">Play Again</button>
+    <button id="muteBtn">🔇 Mute</button>
+    
   </section>
  
   <script type="text/javascript" src="./js/player.js"></script>

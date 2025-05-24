@@ -1,49 +1,41 @@
 // All my dom vars on top 
 const godsContainer = document.querySelector("#gods-container");
-const startBtn = document.getElementById("start-btn");
-const startScreen = document.getElementById("start-screen");
-const gameIntro = document.getElementById("game-intro");
+const startBtn = document.querySelector("#start-btn");
+const startScreen = document.querySelector("#start-screen");
+const gameIntro = document.querySelector("#game-intro");
 
 const gods = [
   {
     name: "Zeus",
-    health: 110,
+    health: 210,
     attackPower: 24,
     special: "Lightning Strike",
     image: "./images/zeusStanding.png",
-    specialImage: "./images/zeusSpecial.png",
-    deathImage: "./images/zeusDeath.png",
     background: "./images/bgzeus.png"
   },
   {
     name: "Ares",
-    health: 100,
+    health: 200,
     attackPower: 20,
     special: "Rage Slash",
     image: "./images/aresStanding.png",
-    specialImage: "./images/aresSpecial.png",
-    deathImage: "./images/aresDeath.png",
     background: "./images/bgAres.png"
   },
   {
     name: "Poseidon",
-    health: 130,
+    health: 230,
     attackPower: 18,
     special: "Tidal Wave",
     image: "./images/poseidonStanding.png",
-    specialImage: "./images/poseidonSpecial.png",
-    deathImage: "./images/poseidonDeath.png",
     background: "./images/bgPoseidon.png"
   },
   {
-    name: "Hades",
-    health: 100,
+    name: "Athena",
+    health: 200,
     attackPower: 22,
-    special: "Soul Drain",
-    image: "./images/hadesStanding.png",
-    specialImage: "./images/hadesSpecial.png",
-    deathImage: "./images/hadesDeath.png",
-    background: "./images/bgHades.png"
+    special: "Shield slam",
+    image: "./images/athenaStanding.png",
+    background: "./images/bgAthena.png"
   }
 ];
 
