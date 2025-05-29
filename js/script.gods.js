@@ -16,7 +16,7 @@ const gods = [
     attackPower: 24,
     special: "Lightning Strike",
     image: "./images/zeusStanding.png",
-    background: "./images/bgzeus.png"
+    background: "./images/bgZeus.png"
   },
   {
     name: "Ares",
