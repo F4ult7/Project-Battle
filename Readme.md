@@ -1,11 +1,11 @@
 *********** To do list *********
 
 - script.gods array of obj etc 
-- Player JS for the behavior of the player attack / heal / 
+- Player JS for the behavior of the player attack / heal 
 - game for the behavior of the page refresh / restart / screens
 - OPTIONAL COOLDOWNS
 - OPTIONAL More function to make the game more challenging and attractive 
-- Add sprites to achieve frame movement 
+- Add sprites to achieve frame movement (cant figure out )
 - Add sounds 
 - Somehow scoreboard or exp?
 - Need to find a way to make the enemy random attacks special heal 
@@ -106,12 +106,3 @@ https://www.youtube.com/watch?v=GnNaK4QD4Ew
 https://www.youtube.com/watch?v=xfCPZhMw5Z0
 
 
-*************Tips that i learned the hard way for my 1st project**************
-
-~ Form what you want to achieve in your head pass it on a paper/note and then start coding.
-~ Do not touch the code when you feel tired it will break.
-~ Do not rush the code take your time or ..it will break. 
-~ Do not code if your head is going crazy it will break. 
-~ it will break thats for sure , atleast for now,when you feel like ready to punch the walls take a step back go to sleep and reset . 
-~ ALWAYS and i mean ALWAYS keep a backup file with your working project in case you break it.
-~ Achievement unlocked "it will break" (35 times)

@@ -44,15 +44,13 @@ document.body.style.backgroundImage = `url('${playerData.background}')`;
 
 
     this.arena.style.display = "block"; // keep like that to get backgrounds into arena
-
     document.querySelector("#god-selection").style.display = "none"; //cards before enter arena
-
     this.updateHealthBars();
   }
 
   updateHealthBars() {
     this.playerHealthBar.style.width = `${
-      (this.player.health / this.player.maxHealth) * 100
+      (this.player.health / this.player.maxHealth) * 100 // similar to chronometer lab %
     }%`;
     this.enemyHealthBar.style.width = `${
       (this.enemy.health / this.enemy.maxHealth) * 100
@@ -69,9 +67,9 @@ document.body.style.backgroundImage = `url('${playerData.background}')`;
 
   endGame(result) {
     if (result === "win") {
-      this.endMessage.textContent = "You win!";
+      this.endMessage.textContent = `${this.player.name} defeated ${this.enemy.name}!`;
     } else {
-      this.endMessage.textContent = "You lose!";
+      this.endMessage.textContent = `${this.player.name} defeated ${this.enemy.name}!`;
     }
     this.endScreen.style.display = "block";
     this.arena.style.display = "none";
@@ -124,7 +122,7 @@ let OurGame;
   restartBtn.addEventListener("click", () => location.reload());
 
  function startGame(godData) {
-  // window.startGame = startGame; // for global access seems like is working fine now..Do not touch
+  // window.startGame = startGame; // for global access it wasnt working before now seems like is working fine now..Do not touch
    console.log("starting the game");
   OurGame = new Game(godData);
 }

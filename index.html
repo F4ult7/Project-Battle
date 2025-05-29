@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,17 +7,18 @@
   <link rel="stylesheet" href="./styles/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
   <header>
     <h1>⚡ Gods of Olympus ⚡</h1>
+    <!-- Mute button -->
+    <button id="mute-btn">🔊 Music</button>
   </header>
 
   <!-- Start Screen -->
   <section id="start-screen">
     <h2>Welcome to Gods of Olympus</h2>
     <button id="start-btn">Play</button>
-    <p><em>Description for the game coming soon</em></p>
+    <p>Gods of Olympus turn-base battle ,<br> simply choose your god and fight your enemy, <br> to ensure your place on the throne</p>
   </section>
 
   <!-- God Selection Screen -->
@@ -32,25 +32,16 @@
   <!-- Arena Battle Screen -->
   <section id="arena">
     <div id="battle-log"></div>
-
-    <!-- Player and Enemy UI -->
     <div id="player-god" class="fighter">
       <h3 id="player-name"></h3>
-      <div class="health-bar">
-        <div id="player-health" class="health-fill"></div>
-      </div>
-      <div id="player-sprite" class="sprite" ></div>
+      <div class="health-bar"><div id="player-health" class="health-fill"></div></div>
+      <div id="player-sprite" class="sprite"></div>
     </div>
-
     <div id="enemy-god" class="fighter">
       <h3 id="enemy-name"></h3>
-      <div class="health-bar">
-        <div id="enemy-health" class="health-fill"></div>
-      </div>
-      <div id="enemy-sprite" class="sprite" ></div>
+      <div class="health-bar"><div id="enemy-health" class="health-fill"></div></div>
+      <div id="enemy-sprite" class="sprite"></div>
     </div>
-    
-<!-- Action buttons -->
     <div id="actions">
       <button id="attack-btn">Attack</button>
       <button id="special-btn">Special</button>
@@ -62,13 +53,10 @@
   <section id="end-screen">
     <h2 id="end-message"></h2>
     <button id="restart-btn">Play Again</button>
-    <button id="muteBtn">🔇 Mute</button>
-    
   </section>
- 
-  <script type="text/javascript" src="./js/player.js"></script>
-  <script type="text/javascript" src="./js/game.js"></script>
-  <script type="text/javascript" src="./js/script.gods.js"></script>
-</body>
 
+  <script src="./js/player.js"></script>
+  <script src="./js/game.js"></script>
+  <script src="./js/script.gods.js"></script>
+</body>
 </html>

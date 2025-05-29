@@ -2,7 +2,7 @@ class Player {
   constructor(name, health, attackPower, special, maxHealth) {
     this.name = name;
     this.health = health;
-    this.maxHealth = maxHealth || health; //health bar fixed this needed
+    this.maxHealth = maxHealth || health; //health bar fixed this needed ( flexibility for future use )
     this.attackPower = attackPower;
     this.special = special;
   }

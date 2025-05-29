@@ -3,6 +3,11 @@ const godsContainer = document.querySelector("#gods-container");
 const startBtn = document.querySelector("#start-btn");
 const startScreen = document.querySelector("#start-screen");
 const gameIntro = document.querySelector("#game-intro");
+const muteBtn = document.querySelector("#mute-btn");
+// music setup only for the background 
+const bgMusic = new Audio("./audio/bg-music.mp3");
+bgMusic.loop   = true;
+bgMusic.volume = 0.1;
 
 const gods = [
   {
@@ -19,7 +24,7 @@ const gods = [
     attackPower: 20,
     special: "Rage Slash",
     image: "./images/aresStanding.png",
-    background: "./images/bgAres.png"
+    background: "./images/bgAres.png"   
   },
   {
     name: "Poseidon",
@@ -70,12 +75,24 @@ const gods = [
     return enemies[randomIndex];
   };
   
-
+  function toggleMusic() {
+  if (bgMusic.muted) {
+    bgMusic.muted = false;
+    muteBtn.textContent = "🔊 Music";
+  } else {
+    bgMusic.muted = true;
+    muteBtn.textContent = "🔇 Music";
+  }
+}
+muteBtn.addEventListener("click", toggleMusic);
+document.querySelector("#start-btn").addEventListener("click", () => {
+  bgMusic.play()
+  });
+;
   // Event listener to go from start screen to selection screen
   startBtn.addEventListener("click", () => {
     startScreen.style.display = "none";
     gameIntro.style.display = "block";
   });
 };
-
-cards() // i dont like this here ** fix later 
+cards() 
